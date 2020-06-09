@@ -11,16 +11,15 @@ let arr = [7, 2, 5, 1, 4, 9, 6, 3, 10, 8];
 
 
 /**------------------ Merge Sort Start ----------------- */
-arr = mergeSort.rmergeSort(arr, 0, arr.length - 1);
+mergeSort.rmergeSort(arr, 0, arr.length - 1);
 /**------------------ Merge Sort End ----------------- */
 
 
 
 
 
-
 /** Print Sorted array */
-// console.log(arr);
+console.log(arr);
 
 
 

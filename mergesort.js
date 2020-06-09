@@ -34,7 +34,9 @@ const divide = function(low, high) {
     const mid = (low + high) / 2;
     divide(low, mid);
     divide(mid + 1, high);
-    conquer(arr.slice(low, mid + 1), arr.slice(mid + 2, high + 1))
+    const left = arr.slice(low, mid);
+    const right = arr.slice(mid);
+    conquer(left, right);
   }
 }
 
