@@ -32,10 +32,9 @@ const rmergeSort = function(arr, low , high) {
 const divide = function(low, high) {
   if (low < high) {
     const mid = (low + high) / 2;
-    // divide(low, mid);
-    // divide(mid + 1, high);
-    console.log(arr);
-    // conquer(arr.slice(low, mid + 1), arr.slice(mid + 2, high + 1));
+    divide(low, mid);
+    divide(mid + 1, high);
+    conquer(arr.slice(low, mid + 1), arr.slice(mid + 2, high + 1))
   }
 }
 
