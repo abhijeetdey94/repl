@@ -1,7 +1,7 @@
 // const arr1 = [2,8,15,19];
 // const arr2 = [5,9,12,17];
 
-const merge = function(arr1, arr2) {
+const conquer = function(arr1, arr2) {
   const merged = [];
   let i = 0;
   let j = 0;
@@ -26,4 +26,17 @@ const merge = function(arr1, arr2) {
   return merged;
 };
 
-exports.merge = merge;
+const rmergeSort = function(arr, low , high) {
+  divide(low, high);
+}
+const divide = function(low, high) {
+  if (low < high) {
+    const mid = (low + high) / 2;
+    // divide(low, mid);
+    // divide(mid + 1, high);
+    console.log(arr);
+    // conquer(arr.slice(low, mid + 1), arr.slice(mid + 2, high + 1));
+  }
+}
+
+exports.rmergeSort = rmergeSort;
